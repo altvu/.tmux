@@ -1,0 +1,115 @@
+activity-action other
+assume-paste-time 1
+base-index 0
+bell-action any
+default-command 
+default-shell /bin/bash
+default-size 800x600
+destroy-unattached off
+detach-on-destroy on
+display-panes-active-colour red
+display-panes-colour blue
+display-panes-time 600
+display-time 2000
+history-limit 2000
+key-table root
+lock-after-time 0
+lock-command "lock -np"
+message-command-style fg=#00b6b6,bg=#000005
+message-style fg=#00b6b6,bg=#000005
+mouse off
+prefix C-a
+prefix2 C-b
+renumber-windows on
+repeat-time 500
+set-titles off
+set-titles-string "#S:#I:#W - \"#T\" #{session_alerts}"
+silence-action other
+status on
+status-bg #000000
+status-fg #00ffff
+status-format[0] "#[align=left range=left #{status-left-style}]#{T;=/#{status-left-length}:status-left}#[norange default]#[list=on align=#{status-justify}]#[list=left-marker]<#[list=right-marker]>#[list=on]#{W:#[range=window|#{window_index} #{window-status-style}#{?#{&&:#{window_last_flag},#{!=:#{window-status-last-style},default}}, #{window-status-last-style},}#{?#{&&:#{window_bell_flag},#{!=:#{window-status-bell-style},default}}, #{window-status-bell-style},#{?#{&&:#{||:#{window_activity_flag},#{window_silence_flag}},#{!=:#{window-status-activity-style},default}}, #{window-status-activity-style},}}]#{T:window-status-format}#[norange default]#{?window_end_flag,,#{window-status-separator}},#[range=window|#{window_index} list=focus #{?#{!=:#{window-status-current-style},default},#{window-status-current-style},#{window-status-style}}#{?#{&&:#{window_last_flag},#{!=:#{window-status-last-style},default}}, #{window-status-last-style},}#{?#{&&:#{window_bell_flag},#{!=:#{window-status-bell-style},default}}, #{window-status-bell-style},#{?#{&&:#{||:#{window_activity_flag},#{window_silence_flag}},#{!=:#{window-status-activity-style},default}}, #{window-status-activity-style},}}]#{T:window-status-current-format}#[norange list=on default]#{?window_end_flag,,#{window-status-separator}}}#[nolist align=right range=right #{status-right-style}]#{T;=/#{status-right-length}:status-right}#[norange default]"
+status-format[1] "#[align=centre]#{P:#{?pane_active,#[reverse],}#{pane_index}[#{pane_width}x#{pane_height}]#[default] }"
+status-interval 15
+status-justify left
+status-keys emacs
+status-left "[#S] "
+status-left-length 10
+status-left-style default
+status-position bottom
+status-right "#{?window_bigger,[#{window_offset_x}#,#{window_offset_y}] ,}\"#{=21:pane_title}\" %H:%M %d-%b-%y"
+status-right-length 40
+status-right-style default
+status-style fg=#00ffff,bg=#000000
+update-environment[0] DISPLAY
+update-environment[1] KRB5CCNAME
+update-environment[2] SSH_ASKPASS
+update-environment[3] SSH_AUTH_SOCK
+update-environment[4] SSH_AGENT_PID
+update-environment[5] SSH_CONNECTION
+update-environment[6] WINDOWID
+update-environment[7] XAUTHORITY
+visual-activity off
+visual-bell off
+visual-silence off
+word-separators " "
+after-bind-key
+after-capture-pane
+after-copy-mode
+after-display-message
+after-display-panes
+after-kill-pane
+after-list-buffers
+after-list-clients
+after-list-keys
+after-list-panes
+after-list-sessions
+after-list-windows
+after-load-buffer
+after-lock-server
+after-new-session
+after-new-window
+after-paste-buffer
+after-pipe-pane
+after-queue
+after-refresh-client
+after-rename-session
+after-rename-window
+after-resize-pane
+after-resize-window
+after-save-buffer
+after-select-layout
+after-select-pane
+after-select-window
+after-send-keys
+after-set-buffer
+after-set-environment
+after-set-hook
+after-set-option
+after-show-environment
+after-show-messages
+after-show-options
+after-split-window
+after-unbind-key
+alert-activity
+alert-bell
+alert-silence
+client-attached
+client-detached
+client-resized
+client-session-changed
+pane-died
+pane-exited
+pane-focus-in
+pane-focus-out
+pane-mode-changed
+pane-set-clipboard
+session-closed
+session-created
+session-renamed
+session-window-changed
+window-layout-changed
+window-linked
+window-pane-changed
+window-renamed
+window-unlinked
