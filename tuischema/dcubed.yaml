@@ -1,0 +1,19 @@
+session_name: "dcubed"
+windows:
+- focus: 'true'
+  layout: a0bf,170x46,0,0[170x19,0,0,2,170x26,0,20{95x26,0,20[95x1,0,20,1,95x24,0,22,4],74x26,96,20[74x6,96,20,3,74x19,96,27,5]}]
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command:
+    - ranger ~/{.,portal,vspce,nexus}
+  - focus: 'true'
+    shell_command:
+    - clear && ipython3 --no-confirm-exit
+  - shell_command:
+    - watch -td 'xclip -sel clip -o'
+  - shell_command:
+    - task next
+  - shell_command:
+    - tree -CaL 3 ~/projects | less -w -R
+  window_name: oZ

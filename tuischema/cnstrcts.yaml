@@ -1,0 +1,13 @@
+session_name: cnstrcts
+windows:
+- focus: 'true'
+  layout: 2745,151x35,0,0[151x2,0,0,0,151x32,0,3{89x32,0,3,1,61x32,90,3[61x22,90,3,2,61x9,90,26,3]}]
+  options: {}
+  panes:
+  - watch -td 'xclip -sel clip -o'
+  - focus: 'true'
+    shell_command: clear && ipython3 --no-confirm-exit
+  - ranger 
+  - newsboat 
+  start_directory: /home/altvu
+  window_name: dVu

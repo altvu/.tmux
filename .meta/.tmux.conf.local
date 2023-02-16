@@ -1,0 +1,36 @@
+
+
+# Tmux status lines
+
+
+# set status-left "❨ #S❩ #{tmux-left}"
+# set status-right "#H #{tmux-right}"
+
+set renumber-windows on
+
+set status-format[0] "#[align=left range=left #{status-left-style}]#{T;=/#{status-left-length}:status-left}"
+
+
+# -- custom variables ----------------------------------------------------------
+
+# to define a custom #{foo} variable, define a POSIX shell function between the
+# '# EOF' and the '# "$@"' lines. Please note that the opening brace { character
+# must be on the same line as the function name otherwise the parse won't detect
+# it.
+#
+# then, use #{foo} in e.g. the 'tmux_conf_theme_status_left' or the
+# 'tmux_conf_theme_status_right' variables.
+
+# # /!\ do not remove the following line
+# EOF
+#
+# datime() {
+#   echo " $(date +%H:%M -d now) "
+# }
+#
+# online() {
+#   ping -c 1 1.1.1.1 >/dev/null 2>&1 && printf '✔' || printf '✘'
+# }
+#
+# "$@"
+# # /!\ do not remove the previous line

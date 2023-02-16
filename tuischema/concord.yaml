@@ -1,0 +1,17 @@
+session_name: origins
+start_directory: ~/
+windows:
+- layout: b6f2,151x41,0,0[151x11,0,0,13,151x22,0,12{85x22,0,12,14,65x22,86,12[65x1,86,12,63,65x20,86,14,15]},151x6,0,35,16]
+  options: {}
+  focus: true
+  panes:
+  - shell_command:
+    - ranger
+  - focus: 'true'
+    shell_command:
+    - ipython --no-banner --no-confirm-exit 
+  - shell_command:
+    - cd ~/dotfiles && git status
+  - shell_command:
+    - watch -td xsel -b
+  window_name: cultiv8

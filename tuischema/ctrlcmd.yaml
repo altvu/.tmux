@@ -1,0 +1,12 @@
+session_name: cmdctrl
+windows:
+- focus: 'true'
+  layout: cf15,151x39,0,0{75x39,0,0,5,75x39,76,0[75x19,76,0,7,75x19,76,20,6]}
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: python3
+  - watch
+  - bash
+  start_directory: /home/altvu
+  window_name: python3

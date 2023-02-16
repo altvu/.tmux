@@ -1,0 +1,32 @@
+session_name: systm
+windows:
+- focus: 'true'
+  layout: c18a,151x39,0,0[151x13,0,0,0,151x25,0,14{90x25,0,14,1,60x25,91,14[60x2,91,14,3,60x22,91,17,2]}]
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command:
+    - cd /home/altvu/nexus/.data/xhtml
+    - python3.8
+  - shell_command:
+    - cd /home/altvu
+    - python3.8
+  - shell_command:
+    - cd /home/altvu
+    - python3.8
+  - focus: 'true'
+    shell_command:
+    - cd /home/altvu
+    - python3
+  window_name: cnstrct
+- layout: af25,151x39,0,0[151x9,0,0,6,151x29,0,10,5]
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command:
+    - cd /home/altvu/studio/melody
+    - bash
+  - shell_command:
+    - cd /home/altvu
+    - mocp
+  window_name: bash
