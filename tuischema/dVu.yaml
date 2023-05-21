@@ -6,13 +6,10 @@ windows:
     automatic-rename: 'off'
   panes:
   - shell_command:
-    - cd /home/altvu/vspce
-    - python3
+    - clear_cache && ranger
   - shell_command:
-    - cd /home/altvu
-    - python3
+    - cd /home/altvu/
   - focus: 'true'
     shell_command:
-    - cd /home/altvu/dotfiles/tmux/tuischema
-    - python3
+    - cd /home/altvu/vspce/projects/ && dtree .
   window_name: Ops

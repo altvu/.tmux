@@ -6,14 +6,14 @@ windows:
     automatic-rename: 'off'
   panes:
   - shell_command:
-    - ranger ~/{.,portal,vspce,nexus}
+    - ranger ~/{.,vspce,nexus}
   - focus: 'true'
-    shell_command:
-    - clear && ipython3 --no-confirm-exit
   - shell_command:
-    - watch -td 'xclip -sel clip -o'
+    - watch -td 'xclip -sel clip -o'  
+  - shell_command:
+    - clear && ipython3 --no-confirm-exit
   - shell_command:
     - task next
   - shell_command:
-    - tree -CaL 3 ~/projects | less -w -R
-  window_name: oZ
+    - tree -CaL 3 ~/vspce/projects/ | less -w -R
+  window_name: oZ_prjcts

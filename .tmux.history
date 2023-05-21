@@ -1,0 +1,22 @@
+move-pane -t 4
+move-pane -t 2
+resize-pane -t 2 -y 1
+kill-session
+resize-pane -t 3 -y 3
+killw -t 2
+refresh-client 
+kill-session 
+kill-session
+shdW
+killw 
+kill-session
+shDw
+kill-session
+name
+datHub
+killw
+kill-sessionm
+kill-session
+new-window htop
+menu
+rename-window ranger
