@@ -1,7 +1,8 @@
 # tmux
 
 
-> Self-contained, attractive and versatile `.tmux.conf` configuration file.
+> My sleek & handy tmux configuration refined _somewhat obsessively_.
+
 
 ![["/home/altvu/nexus/_media/visual/tmux-screenshot.png"]]
 
