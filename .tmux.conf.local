@@ -1,7 +1,7 @@
 # : << EOF
-# https://github.com/NikanaO/.tmux
+# https://github.com/altvu/.tmux
 # NOT YET LICENSED
-#   future -> Copyright 2021 AltVu_Constructs (@NikanaO).
+#   future -> Copyright 2021 AltVu_Constructs (@altvu).
 
 
 # -- general ----------------------------------------------------------------
@@ -17,8 +17,6 @@ bind C-a send-prefix
 # copy in tmux also copies to os clipboard
 tmux_conf_copy_to_os_clipboard=true
 
-# move status line to top
-# set -g status-position top
 
 # -- navigation ----------------------------------------------------------------
 # -- session creation ----------------------------------------------------------
